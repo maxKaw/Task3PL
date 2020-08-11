@@ -1,0 +1,159 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+
+.bgimg {
+  background-image: url('../pics/background.svg');
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center_div {
+  width: 50%;
+  padding: 10px;
+}
+
+#grid .row {
+  padding: 10px;
+}
+
+#arrowLeft span, #arrowRight span {
+  font-size: 30px;
+}
+#grid span {
+  display: none;
+}
+#textPages, #textInstructions {
+  color: white;
+  font-size: 16px;
+}
+
+.selectedBtn {
+  color: green;
+}
+
+footer {
+  color: white;
+  margin-top: 30px;
+}
+
+/* Customize container */
+@media (max-width: 320px){
+  #grid button, #emptyCell {
+    text-align: center;
+    font-size: 9px;
+    margin: 0px;
+    padding: 0px;
+    width: 190%;
+    height: 50px;
+  }
+}
+
+/* Customize container */
+@media  (min-width: 321px) and (max-width: 479px) {
+  #grid button, #emptyCell {
+    text-align: center;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+    width: 160%;
+    height: 50px;
+  }
+  #logo {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* Customize container */
+@media  (min-width: 400px) and (max-width: 491px) {
+  #grid button, #emptyCell {
+    text-align: center;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+    width: 140%;
+    height: 50px;
+  }
+  #logo {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* Customize container */
+@media  (min-width: 492px) and (max-width: 768px) {
+  #grid button, #emptyCell {
+    text-align: center;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+    width: 120%;
+    height: 50px;
+  }
+  #logo {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* Responsive: Portrait small tablets*/
+@media (min-width: 768px) and (max-width: 849px) {
+  #arrowLeft span, #arrowRight span {
+    font-size: 50px;
+  }
+  #grid span {
+    display: block;
+    float: left;
+    font-size: 80px;
+    margin-left: 3px;
+  }
+  #grid button, #emptyCell {
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    width: 110%;
+    height: 80px;
+  }
+  #textPages, #textInstructions {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+/* Responsive: Portrait big tablets and up */
+@media screen and (min-width: 850px) {
+  #arrowLeft span, #arrowRight span {
+    font-size: 50px;
+  }
+  #grid span {
+    display: block;
+    float: left;
+    font-size: 100px;
+    margin-left: 5px;
+  }
+  #grid button, #emptyCell {
+    text-align: center;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100px;
+  }
+  #textPages, #textInstructions {
+    color: white;
+    font-size: 26px;
+  }  
+}
+
